@@ -1,0 +1,133 @@
+
+:root{
+  --primary-backgroud-color:#614FE0;
+  --secondry-backgroud-color:#D3CEF6;
+  --light-backgroud-color:#F3F3F3;
+  --pressed-color:#CFCFCF;
+  --disabled-color:#B7B7B8;
+  --primary-color:#272728;
+  --secondry-color:#575758;
+  --light-border-color:#E7E7E8;
+}
+/*
+* text tag structure
+-h1 primary color
+-h2 primary color
+-h4 secondary color
+*/
+
+
+
+*{
+  margin: 0;
+  padding:0;
+  border: 0; 
+}
+
+body {
+  font-family: heebo, ans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+button{
+  cursor: pointer;
+  background-color: initial;
+
+}
+
+input:focus{
+  outline: 0;
+}
+
+input[type="radio"]{
+  -webkit-appearance: none;
+  position:relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  border: 2px solid var(--secondry-color);
+  cursor: pointer;
+}
+
+input[type="radio"]:before {
+  content: '';
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked:before {
+  background: var(--primary-backgroud-color);
+}
+
+input[type="radio"]:checked {
+  border: 2px solid var(--primary-backgroud-color);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+h4{
+  color:var(--secondry-color);
+}
+
+
+
+.page{
+  max-width: 1450px;
+  margin: 0 auto;
+  padding:0 20px;
+}
+
+
+.primary-button{
+  width: 100%;
+  padding: 6px 0;
+  color: var(--primary-backgroud-color);
+  
+  border: 1px solid var(--primary-backgroud-color);
+  border-radius: 20px;
+}
+
+.primary-button path{
+  stroke:var(--primary-backgroud-color);
+}
+
+
+.primary-button:hover{
+  color:#fff;
+  background-color: var(--primary-backgroud-color);
+}
+
+.primary-button:hover path{
+  stroke:#fff;
+}
+
+.seconedary-button{
+  border: 1px solid var(--light-border-color);
+  border-radius: 12px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .app {
+    margin-bottom: 70px;
+  }
+}
+
+

@@ -1,0 +1,74 @@
+.picker__line {
+    display: flex;
+    width: 50%;
+    column-gap: 10px;
+}
+
+.picker__line:first-child {
+    margin-bottom: 15px;
+}
+
+.picker__container {
+    width: 100%;
+    position: relative;
+}
+
+
+.picker__line:last-child .picker__container {
+    width: calc(50% - 5px);
+}
+
+.picker__inner-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+}
+
+.picker__selected {
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 12%);
+    border-radius: 12px;
+    background-color: white;
+    z-index: 1;
+}
+
+.picker__selected button {
+    border: 0 !important;
+}
+
+
+
+.picker__container button {
+    border: 1px solid var(--light-border-color);
+    border-radius: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.picker__container ul {
+    list-style-type: none;
+    width: 100%;
+    background-color: #ffff;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.picker__container li {
+    padding: 5px 0;
+}
+
+.picker__container li:last-child {
+    border-radius: 0 0 12px 12px;
+}
+
+.picker__container li:hover {
+    background-color: var(--pressed-color);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .picker {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,14 @@
+.carousel__carousel{
+    display: flex;
+}
+.carousel__container{
+    position: relative;
+    overflow:hidden;
+}
+
+.carousel__slider{
+    display:flex;
+    column-gap: 20px;
+    justify-content: flex-start;
+    transition:all 1s ease-in-out;  
+}

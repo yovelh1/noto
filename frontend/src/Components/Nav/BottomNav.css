@@ -1,0 +1,18 @@
+.bottom-nav{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        padding: 10px;
+    bottom: 0;
+    background-color: #ffff;
+}
+
+.bottom-nav__button-container{
+    position: relative;
+}
+
+
+

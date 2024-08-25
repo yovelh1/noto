@@ -1,0 +1,31 @@
+.edit-avatar{
+    width:30%;
+    margin:0 auto;
+}
+
+.edit-avatar__image-container{
+position: relative;
+ border: 1px solid var(--secondry-backgroud-color);
+ border-radius: 50%;
+ overflow: hidden;
+ padding-top:100%;
+
+}
+
+.edit-avatar__default-image{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: var(--secondry-backgroud-color);
+
+}
+
+.edit-avatar__default-image svg{
+    width:40px;
+    height:40px;
+}

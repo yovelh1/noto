@@ -1,0 +1,22 @@
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address__address-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.address__no-address {
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.address__no-address strong {
+    font-size: 20px;
+}

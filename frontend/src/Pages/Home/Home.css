@@ -1,0 +1,92 @@
+.home__categories-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 ;
+
+}
+
+.home__categories-container a > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    width: 150px;
+}
+
+
+.home__categories-container h2 {
+    font-size: 40px;
+    
+}
+
+
+
+.home__arrow {
+    width: 100px;
+    height: 60px;
+    position: relative;
+}
+
+.home__arrow > div{
+    position: absolute;
+    top: 25px;
+    width: 90%;
+    height: 10px;
+    background-color: var(--primary-backgroud-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
+  
+.home__arrow-left > div::after, .home__arrow-left > div::before {
+    content: '';
+    position: absolute;
+    width: 48%;
+    height: 10px;
+    left: -8px;
+    background-color: var(--primary-backgroud-color);;
+}
+
+.home__arrow-left > div::after {
+    top: -12px;
+    transform: rotate(320deg);
+}
+
+.home__arrow-left > div::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(45deg);
+}
+
+
+.home__arrow-right > div::after, .home__arrow-right > div::before {
+    content: '';
+    position: absolute;
+    width: 48%;
+    height: 10px;
+    right: -8px;
+    background-color: var(--primary-backgroud-color);;
+}
+
+
+.home__arrow-right > div::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.home__arrow-right> div::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.home__arrow-left{
+    animation: arrow-left-animation 1s alternate 5; 
+}
+.home__arrow-right{
+    animation: arrow-right-animation 1s alternate 5; 
+}
+@keyframes arrow-left-animation {
+    from {left: 0;} to{left: -20px;}
+}
+@keyframes arrow-right-animation {
+    from {right: 0;} to{right: -20px;}
+}

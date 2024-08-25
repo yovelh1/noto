@@ -1,0 +1,43 @@
+.setting-inputs__container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.setting-inputs__container .input,
+.setting-inputs__password-container {
+    width: 45%;
+    display: inline-block;
+}
+
+.setting-inputs__password-container {
+    position: relative;
+}
+
+.setting-inputs__password-container button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+}
+
+.setting-inputs__password-container button.setting-inputs__eye-on-err {
+    right: 35px !important;
+}
+
+.setting-inputs__password-container .input {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 468px) {
+    .setting-inputs__container {
+        flex-direction: column;
+    }
+
+    .setting-inputs__container .input,
+    .setting-inputs__password-container {
+        width: 100%;
+    }
+}

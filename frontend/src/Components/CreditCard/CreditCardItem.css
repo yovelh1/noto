@@ -1,0 +1,25 @@
+.credit-card-item {
+    max-width: 300px;
+    min-width: 260px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 30px 20px 10px;
+}
+
+.credit-card-item__selected {
+    background-color: var(--secondry-backgroud-color);
+}
+
+.credit-card-item__line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-card-item__number {
+    flex: 100%;
+    text-align: center;
+}

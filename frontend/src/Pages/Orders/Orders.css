@@ -1,0 +1,5 @@
+.orders__container{
+    display:flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}

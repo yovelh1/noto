@@ -1,0 +1,23 @@
+.credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.credit-card__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.credit-card__no-cards {
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.credit-card_no-cards strong {
+    font-size: 20px;
+}

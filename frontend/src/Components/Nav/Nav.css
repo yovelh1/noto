@@ -1,0 +1,34 @@
+.nav{
+    margin-bottom:20px;
+}
+.nav__nav{
+    padding: 0 20px;
+    width: fit-content;
+}
+
+
+.nav__nav ul{
+    display: flex;
+    list-style-type: none;
+    color:#B7B7B8;
+}
+.nav__nav ul a{
+    padding: 0 5px;
+}
+
+.nav__position{
+    position:relative;
+}
+
+.nav__dot{
+    display: flex;
+    position: absolute;
+    left:0;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav__nav{
+        margin: 0 auto;
+    } 
+}

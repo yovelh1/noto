@@ -1,0 +1,32 @@
+.address-item {
+    max-width: 300px;
+    min-width: 260px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.address-item__selected {
+    background-color: var(--secondry-backgroud-color);
+}
+
+.address-item__left-side h4 {
+    margin-bottom: 5px;
+}
+
+.address-item__right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-item__right-side div {
+    display: flex;
+    column-gap: 5px;
+}
+
+.address-item__right-side input {
+    margin: auto;
+}

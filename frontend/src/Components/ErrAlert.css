@@ -1,0 +1,12 @@
+.err-alert{
+    display:flex;
+    align-items:center;
+}
+
+.err-alert span{
+    color:red;
+    position: relative;
+    top:2px;
+    margin-left: 5px;
+    font-weight: 700;
+}

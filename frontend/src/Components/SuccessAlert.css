@@ -1,0 +1,15 @@
+.success-alert{
+    background: #97F2E2;
+    color: #19594D;
+    text-align: left;
+    border-radius:12px;
+    padding: 5px 10px;
+    max-height: 100px;
+    overflow: hidden;
+    animation: showSuccess 2s;
+}
+
+@keyframes showSuccess {
+    from { max-height:0;padding:0;}
+    to {  max-height:100px;padding: 5px 10px;}
+}
